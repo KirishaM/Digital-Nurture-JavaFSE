@@ -1,0 +1,37 @@
+<style>
+form{
+width:400px;
+padding:20px;
+border:1px solid gray;
+}
+</style>
+
+<form onsubmit="showMsg();return false;">
+Name:
+<input type="text" placeholder="Enter Name" required autofocus><br><br>
+
+Email:
+<input type="email" placeholder="Enter Email" required><br><br>
+
+Date:
+<input type="date" required><br><br>
+
+Event Type:
+<select required>
+<option>Sports</option>
+<option>Music</option>
+</select><br><br>
+
+Message:
+<textarea placeholder="Enter Message"></textarea><br><br>
+
+<input type="submit">
+
+<output id="result"></output>
+</form>
+
+<script>
+function showMsg(){
+document.getElementById("result").innerHTML="Registration Successful";
+}
+</script>
